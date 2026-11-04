@@ -1,6 +1,6 @@
 # Template Undangan Pernikahan (Contoh / Portofolio)
 
-Tiga contoh undangan pernikahan digital berupa halaman web statis, dibuat untuk tahap validasi pasar (lihat [PRD](../PRD.md), bagian Go-to-Market). Tidak perlu server atau database: cukup unggah folder ini ke hosting statis.
+Empat contoh undangan pernikahan digital berupa halaman web statis, dibuat untuk tahap validasi pasar (lihat [PRD](../PRD.md), bagian Go-to-Market). Tidak perlu server atau database: cukup unggah folder ini ke hosting statis.
 
 Semua nama, alamat, nomor rekening, dan nomor WhatsApp di demo adalah **fiktif**.
 
@@ -11,17 +11,21 @@ templates/
 ├── index.html              # Katalog template + alat "Buat tautan tamu"
 ├── assets/
 │   ├── invitation.js       # Mesin undangan (dipakai semua template)
-│   └── base.css            # Tata letak & gaya dasar
+│   ├── illustrations.js    # Ilustrasi SVG pasangan pengantin & gunungan
+│   └── base.css            # Tata letak, animasi & gaya dasar
+├── adat-jawa/              # Busana adat Jawa, pintu gebyok, gunungan, melati
 ├── elegan-gold/            # Biru malam + emas, formal / ballroom
-├── rustic-sage/            # Krem + hijau sage, garden party
-└── minimalis-modern/       # Putih + terakota, intimate / editorial
+├── rustic-sage/            # Krem + hijau sage, pengantin berhijab
+└── pastel-dreamy/          # Pink-lilac, playful, untuk pasangan muda
 ```
 
 Setiap template berisi `index.html` (data undangan) dan `theme.css` (warna, font, ornamen).
 
 ## Fitur setiap undangan
 
-- Sampul dengan **nama tamu personal** dari URL: `.../elegan-gold/?to=Bapak+Ahmad`
+- **Ilustrasi pasangan pengantin** (adat Jawa, atau jas & gaun dengan/tanpa hijab) yang bergerak: bergoyang, berkedip, cunduk mentul bergetar, hati melayang
+- Sampul dengan **nama tamu personal** dari URL: `.../adat-jawa/?to=Bapak+Ahmad`
+- Animasi pembuka: pintu terbuka (gebyok / tirai daun / awan), lalu partikel jatuh sesuai tema (melati, kilau, daun, hati)
 - Tombol "Buka Undangan" dan musik latar (opsional)
 - Hitung mundur dan tombol simpan ke Google Calendar
 - Kutipan ayat atau quote, profil kedua mempelai, dan kisah cinta (timeline)
@@ -29,7 +33,8 @@ Setiap template berisi `index.html` (data undangan) dan `theme.css` (warna, font
 - Galeri foto
 - RSVP & ucapan, dengan opsi tamu mengirim konfirmasi ke WhatsApp mempelai
 - Amplop digital dengan tombol salin nomor rekening / alamat kado
-- Navigasi bawah, animasi saat di-scroll, tampilan mobile-first
+- Navigasi bawah dengan penanda bagian aktif, animasi scroll bervariasi (naik, zoom, geser, blur), tampilan mobile-first
+- Menghormati pengaturan *reduce motion* di HP tamu (animasi dimatikan otomatis)
 
 > **Catatan:** pada versi statis ini, RSVP & ucapan hanya tersimpan di browser tamu masing-masing (localStorage). Rekap terpusat untuk mempelai baru tersedia setelah ada backend (fase MVP). Selama tahap validasi, konfirmasi dikumpulkan lewat tombol "Kirim juga via WhatsApp".
 
@@ -45,16 +50,18 @@ Lalu buka http://localhost:8000.
 
 ## Membuat undangan untuk klien
 
-1. Salin folder template yang dipilih, misalnya `elegan-gold` menjadi `budi-ani`.
+1. Salin folder template yang dipilih, misalnya `adat-jawa` menjadi `budi-ani`.
 2. Buka `budi-ani/index.html` dan ubah isi `window.INVITATION`:
 
 | Kolom | Keterangan |
 |---|---|
 | `slug` | ID unik undangan, dipakai sebagai kunci penyimpanan |
 | `groomFirst` | `true` = nama pria ditulis lebih dulu |
-| `groom`, `bride` | Nama panggilan, nama lengkap, urutan anak, orang tua, Instagram, `photo` (URL foto; kosongkan untuk inisial) |
-| `quote` | Ayat atau kutipan (hapus kolom ini untuk menyembunyikan) |
-| `events` | Daftar acara: `name`, `start`/`end` (format `2027-05-15T08:00:00+07:00`), `venue`, `address`, `showMap`, `endText` (mis. "Selesai"), `mapUrl` (opsional, tautan Google Maps yang tepat) |
+| `theme` | `illustration`: `'jawa'` atau `'modern'`; `hijab`: `true/false` (ilustrasi modern); `ornament`: `'gunungan'` atau `'none'`; `particles`: jumlah partikel jatuh (`0` = mati) |
+| `labels` | Judul tiap bagian, mis. `events: ['Rantaman Adicara', 'Rangkaian Acara']` (judul, subjudul) |
+| `groom`, `bride` | Nama panggilan, nama lengkap, urutan anak, orang tua, Instagram, `photo` (URL foto; kosongkan untuk memakai ilustrasi) |
+| `quote` | Ayat atau kutipan, `translation` opsional (hapus kolom ini untuk menyembunyikan) |
+| `events` | Daftar acara: `name`, `main` (acara utama untuk hitung mundur), `start`/`end` (format `2027-05-15T08:00:00+07:00`), `venue`, `address`, `showMap`, `endText` (mis. "Selesai"), `mapUrl` (opsional, tautan Google Maps yang tepat) |
 | `notes` | Catatan dress code dan sebagainya |
 | `story` | Timeline kisah cinta (kosongkan `[]` untuk menyembunyikan) |
 | `gallery` | Daftar foto `{ src, alt }`; jika kosong, tampil kotak contoh sebanyak `galleryPlaceholders` |
@@ -71,3 +78,7 @@ Lalu buka http://localhost:8000.
 ## Hosting gratis
 
 Folder `templates` bisa langsung dipublikasikan ke GitHub Pages, Netlify, Vercel, atau Cloudflare Pages tanpa proses build.
+
+## Mengubah warna busana ilustrasi
+
+Warna ilustrasi diatur di `theme.css` lewat CSS variable, sehingga bisa disesuaikan dengan warna seragam klien tanpa menyentuh gambar. Contoh: `--kebaya` (kebaya), `--beskap`, `--blangkon`, `--jarik`, `--suit` (jas), `--gown` (gaun), `--hijab`, `--skin` (warna kulit), dan `--hair` (rambut). Daftar lengkapnya ada di bagian atas `assets/base.css`.

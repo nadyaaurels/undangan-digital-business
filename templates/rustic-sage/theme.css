@@ -1,67 +1,69 @@
-/* Tema: Rustic Sage — krem hangat, hijau sage, dan dedaunan; cocok untuk garden party */
+/* Tema: Rustic Sage — krem & hijau sage, dedaunan berguguran, pengantin berhijab */
 :root {
-  --page-bg: #ebe4d4;
-  --bg: #f7f2e8;
-  --surface: #fffbf3;
-  --text: #3b4636;
+  --page-bg: #e9e2d0;
+  --bg: #f7f2e7;
+  --surface: #fffdf7;
+  --glass: rgba(255, 253, 247, .8);
+  --text: #33402f;
   --title: #4f6145;
   --muted: #7b7666;
-  --accent: #7d8f69;
-  --accent-contrast: #fffbf3;
-  --border: #ddd3bd;
-  --radius: 18px;
-  --input-bg: #fffdf8;
-  --input-radius: 12px;
-  --nav-bg: rgba(255, 251, 243, .88);
-  --card-shadow: 0 6px 20px rgba(79, 97, 69, .08);
+  --accent: #6f8a5b;
+  --accent-contrast: #ffffff;
+  --accent-glow: rgba(111, 138, 91, .3);
+  --btn-bg: linear-gradient(135deg, #93ad7b, #5b7448);
+  --chip-bg: rgba(111, 138, 91, .12);
+  --border: #dfd6c2;
+  --nav-bg: rgba(255, 253, 247, .88);
+  --frame-bg: radial-gradient(circle at 50% 35%, #f7f9ef, #dfe7d0);
+  --card-shadow: 0 12px 30px rgba(79, 97, 69, .1);
 
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-script: 'Parisienne', cursive;
-  --font-body: 'Nunito Sans', system-ui, sans-serif;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-script: 'Allura', cursive;
+  --font-body: 'Quicksand', system-ui, sans-serif;
 
-  --photo-radius: 50%;
-  --photo-border: 2px dashed #b9c4a8;
-  --photo-padding: 8px;
-  --photo-bg: #e5ead9;
-  --photo-text: #7d8f69;
+  --skin: #f1c6a0;
+  --suit: #6d7f62;
+  --suit-dark: #55654c;
+  --tie: #d8a48f;
+  --gown: #fffaf0;
+  --gown-shade: #e3dccb;
+  --hijab: #f8f3ea;
+  --hijab-shade: #d8cdb8;
+  --sash: #c9b48a;
+  --bouquet-1: #e8a7a0;
+  --bouquet-2: #fffaf0;
+  --leaf: #7d9a6a;
+  --gold: #c9a35a;
+  --heart: #e08f8a;
 
-  --tile-bg: linear-gradient(150deg, #dfe6d2, #c9d3b8);
-  --tile-bg-2: linear-gradient(150deg, #efe3cf, #e1d0b3);
-  --tile-bg-3: linear-gradient(150deg, #e8ddd8, #d8c6bd);
+  --leaf-branch: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%237d8f69' stroke-width='2'%3E%3Cpath d='M0 200C60 150 110 90 190 10'/%3E%3Cpath d='M30 175C55 140 80 120 120 105'/%3E%3C/g%3E%3Cg fill='%238fa877'%3E%3Cellipse cx='45' cy='150' rx='22' ry='8' transform='rotate(-70 45 150)'/%3E%3Cellipse cx='70' cy='150' rx='22' ry='8' transform='rotate(10 70 150)'/%3E%3Cellipse cx='85' cy='105' rx='22' ry='8' transform='rotate(-65 85 105)'/%3E%3Cellipse cx='110' cy='108' rx='22' ry='8' transform='rotate(15 110 108)'/%3E%3Cellipse cx='125' cy='65' rx='20' ry='7' transform='rotate(-60 125 65)'/%3E%3Cellipse cx='150' cy='62' rx='20' ry='7' transform='rotate(20 150 62)'/%3E%3Cellipse cx='175' cy='25' rx='16' ry='6' transform='rotate(-45 175 25)'/%3E%3C/g%3E%3Cg fill='%23e8a7a0'%3E%3Ccircle cx='60' cy='175' r='7'/%3E%3Ccircle cx='140' cy='95' r='6'/%3E%3C/g%3E%3Cg fill='%23fffaf0'%3E%3Ccircle cx='60' cy='175' r='2.5'/%3E%3Ccircle cx='140' cy='95' r='2'/%3E%3C/g%3E%3C/svg%3E");
+  --leaf-branch-r: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg transform='rotate(180 100 100)'%3E%3Cg fill='none' stroke='%237d8f69' stroke-width='2'%3E%3Cpath d='M0 200C60 150 110 90 190 10'/%3E%3Cpath d='M30 175C55 140 80 120 120 105'/%3E%3C/g%3E%3Cg fill='%238fa877'%3E%3Cellipse cx='45' cy='150' rx='22' ry='8' transform='rotate(-70 45 150)'/%3E%3Cellipse cx='70' cy='150' rx='22' ry='8' transform='rotate(10 70 150)'/%3E%3Cellipse cx='85' cy='105' rx='22' ry='8' transform='rotate(-65 85 105)'/%3E%3Cellipse cx='110' cy='108' rx='22' ry='8' transform='rotate(15 110 108)'/%3E%3Cellipse cx='125' cy='65' rx='20' ry='7' transform='rotate(-60 125 65)'/%3E%3Cellipse cx='150' cy='62' rx='20' ry='7' transform='rotate(20 150 62)'/%3E%3C/g%3E%3Cg fill='%23e8a7a0'%3E%3Ccircle cx='60' cy='175' r='7'/%3E%3Ccircle cx='140' cy='95' r='6'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  --ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 22'%3E%3Cpath d='M10 11h130' stroke='%236f8a5b' stroke-width='1'/%3E%3Cg fill='%238fa877'%3E%3Cellipse cx='62' cy='6' rx='7' ry='3' transform='rotate(-25 62 6)'/%3E%3Cellipse cx='62' cy='16' rx='7' ry='3' transform='rotate(25 62 16)'/%3E%3Cellipse cx='88' cy='6' rx='7' ry='3' transform='rotate(25 88 6)'/%3E%3Cellipse cx='88' cy='16' rx='7' ry='3' transform='rotate(-25 88 16)'/%3E%3C/g%3E%3Ccircle cx='75' cy='11' r='4.5' fill='%23e8a7a0'/%3E%3C/svg%3E");
+  --top-ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 50'%3E%3Cpath d='M10 40 Q70 10 130 40' fill='none' stroke='%237d8f69' stroke-width='1.6'/%3E%3Cg fill='%238fa877'%3E%3Cellipse cx='30' cy='30' rx='9' ry='4' transform='rotate(-40 30 30)'/%3E%3Cellipse cx='48' cy='22' rx='9' ry='4' transform='rotate(-25 48 22)'/%3E%3Cellipse cx='92' cy='22' rx='9' ry='4' transform='rotate(25 92 22)'/%3E%3Cellipse cx='110' cy='30' rx='9' ry='4' transform='rotate(40 110 30)'/%3E%3C/g%3E%3Ccircle cx='70' cy='20' r='9' fill='%23e8a7a0'/%3E%3Ccircle cx='70' cy='20' r='3.5' fill='%23fffaf0'/%3E%3Ccircle cx='56' cy='26' r='5' fill='%23fffaf0' stroke='%23e3dccb'/%3E%3Ccircle cx='84' cy='26' r='5' fill='%23fffaf0' stroke='%23e3dccb'/%3E%3C/svg%3E");
+  --top-ornament-h: 52px;
+  --particle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M3 17C3 8 9 3 17 3C17 11 12 17 3 17Z' fill='%238fa877'/%3E%3Cpath d='M3 17L15 5' stroke='%23f6f1e6' stroke-width='.8'/%3E%3C/svg%3E");
+
+  /* Pintu bergeser ke samping seperti tirai daun */
+  --door-bg: var(--leaf-branch) left bottom / 230px no-repeat, radial-gradient(ellipse at 100% 50%, #fffdf7, #efe7d4);
+  --door-bg-r: var(--leaf-branch-r) right top / 230px no-repeat, radial-gradient(ellipse at 0% 50%, #fffdf7, #efe7d4);
+  --door-open-l: translateX(-100%);
+  --door-open-r: translateX(100%);
+
+  --hero-bg: var(--leaf-branch-r) right -60px top -40px / 200px no-repeat, var(--leaf-branch) left -60px bottom 40px / 200px no-repeat, radial-gradient(circle at 50% 35%, #fffdf7, transparent 70%);
+  --arch-bg: radial-gradient(circle at 50% 30%, #fbfcf6, #dfe7d0);
+  --arch-border: 6px solid #fff;
+  --arch-dash: rgba(111, 138, 91, .35);
+  --quote-bg: linear-gradient(135deg, #7d9a6a, #4f6145);
+  --quote-text: #fffdf7;
+  --quote-cite: #f1e3b8;
+  --gift-bg: linear-gradient(135deg, #93ad7b, #4f6145);
+
+  --tile-bg: linear-gradient(150deg, #e3ead6, #c9d3b8);
+  --tile-bg-2: linear-gradient(150deg, #f1e6d3, #e1d0b3);
+  --tile-bg-3: linear-gradient(150deg, #efe0dc, #dcc5bd);
   --tile-text: #6c7a5b;
-  --tile-radius: 14px;
-
-  --ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 170 26'%3E%3Cpath d='M10 13h150' stroke='%237d8f69' stroke-width='1'/%3E%3Cg fill='%237d8f69'%3E%3Cellipse cx='70' cy='8' rx='7' ry='3' transform='rotate(-25 70 8)'/%3E%3Cellipse cx='70' cy='18' rx='7' ry='3' transform='rotate(25 70 18)'/%3E%3Cellipse cx='100' cy='8' rx='7' ry='3' transform='rotate(25 100 8)'/%3E%3Cellipse cx='100' cy='18' rx='7' ry='3' transform='rotate(-25 100 18)'/%3E%3C/g%3E%3Ccircle cx='85' cy='13' r='4' fill='%23c9a27e'/%3E%3C/svg%3E");
-
-  --leaf: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%237d8f69' stroke-width='2'%3E%3Cpath d='M0 200C60 150 110 90 190 10'/%3E%3Cpath d='M30 175C55 140 80 120 120 105'/%3E%3C/g%3E%3Cg fill='%237d8f69'%3E%3Cellipse cx='45' cy='150' rx='22' ry='8' transform='rotate(-70 45 150)'/%3E%3Cellipse cx='70' cy='150' rx='22' ry='8' transform='rotate(10 70 150)'/%3E%3Cellipse cx='85' cy='105' rx='22' ry='8' transform='rotate(-65 85 105)'/%3E%3Cellipse cx='110' cy='108' rx='22' ry='8' transform='rotate(15 110 108)'/%3E%3Cellipse cx='125' cy='65' rx='20' ry='7' transform='rotate(-60 125 65)'/%3E%3Cellipse cx='150' cy='62' rx='20' ry='7' transform='rotate(20 150 62)'/%3E%3Cellipse cx='175' cy='25' rx='16' ry='6' transform='rotate(-45 175 25)'/%3E%3C/g%3E%3Cg fill='%23c9a27e'%3E%3Ccircle cx='60' cy='175' r='6'/%3E%3Ccircle cx='140' cy='95' r='5'/%3E%3C/g%3E%3C/svg%3E");
-
-  --cover-bg: radial-gradient(ellipse at 50% 40%, #fffbf3 0%, #f1ead9 70%);
 }
 
-/* Dedaunan di sudut sampul, hero, dan penutup */
-.cover::before, .cover::after, .hero::before, .closing::before {
-  content: '';
-  position: absolute;
-  width: 210px;
-  height: 210px;
-  background: var(--leaf) center / contain no-repeat;
-  opacity: .55;
-  pointer-events: none;
-}
-.cover::before { left: -30px; bottom: -30px; }
-.cover::after { right: -30px; top: -30px; transform: rotate(180deg); }
-.hero::before { right: -50px; top: -20px; width: 170px; height: 170px; transform: scaleY(-1) rotate(90deg); opacity: .35; }
-.closing::before { left: -50px; bottom: 0; width: 170px; height: 170px; opacity: .35; }
-
-.guest-box {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 18px 16px;
-  box-shadow: var(--card-shadow);
-}
-
-.section:nth-of-type(even) { background: #f1eadb; }
-.section-title { font-style: italic; }
-.event-card { border-top: 4px solid var(--accent); }
-.wish { border-radius: 14px; }
+.section:nth-of-type(even) { background: #f0eadb; }
+.closing { background: var(--leaf-branch) left -50px bottom -30px / 180px no-repeat, var(--leaf-branch-r) right -50px top -20px / 180px no-repeat, #f7f2e7; }

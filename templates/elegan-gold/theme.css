@@ -1,68 +1,82 @@
-/* Tema: Elegan Gold — biru malam dengan aksen emas, klasik & mewah */
+/* Tema: Elegan Gold — biru malam & emas, kilau bintang, pasangan berjas & bergaun */
 :root {
   --page-bg: #08111d;
   --bg: #0f1b2d;
-  --surface: rgba(201, 164, 92, .06);
+  --surface: #14233a;
+  --glass: rgba(255, 255, 255, .06);
   --text: #f1e9d8;
-  --title: #e6cf9a;
-  --muted: #b5ab95;
-  --accent: #c9a45c;
+  --title: #ecd49a;
+  --muted: #b9af99;
+  --accent: #d4b06a;
   --accent-contrast: #0f1b2d;
-  --border: rgba(201, 164, 92, .35);
-  --radius: 2px;
-  --btn-radius: 2px;
-  --input-radius: 2px;
+  --accent-glow: rgba(212, 176, 106, .3);
+  --btn-bg: linear-gradient(135deg, #f0d79a, #b98b3e);
+  --chip-bg: rgba(212, 176, 106, .14);
+  --border: rgba(212, 176, 106, .3);
+  --input-bg: rgba(255, 255, 255, .06);
   --nav-bg: rgba(15, 27, 45, .85);
+  --frame-border: #d4b06a;
+  --frame-bg: radial-gradient(circle at 50% 35%, #fdf6e7, #e9d4a8);
+  --card-shadow: 0 14px 34px rgba(0, 0, 0, .3);
 
-  --font-display: 'Cormorant Garamond', Georgia, serif;
-  --font-script: 'Great Vibes', cursive;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-script: 'Pinyon Script', cursive;
   --font-body: 'Montserrat', system-ui, sans-serif;
 
-  --photo-radius: 999px 999px 4px 4px;
-  --photo-border: 1px solid #c9a45c;
-  --photo-padding: 6px;
-  --photo-bg: #13233a;
-  --photo-pattern: radial-gradient(circle at 50% 35%, rgba(201, 164, 92, .25), transparent 65%);
-  --photo-text: #e6cf9a;
+  --suit: #1c2536;
+  --suit-dark: #131a27;
+  --tie: #d4b06a;
+  --gown: #fffaf0;
+  --gown-shade: #e6d8bd;
+  --sash: #d4b06a;
+  --hair: #3a2418;
+  --bouquet-1: #f2b8c6;
+  --veil: rgba(255, 255, 255, .6);
+  --gold: #d4b06a;
+  --heart: #e8a0b0;
+  --shadow: rgba(15, 27, 45, .18);
 
-  --tile-bg: linear-gradient(160deg, #1a2c47, #0f1b2d);
-  --tile-bg-2: linear-gradient(160deg, #2a2a35, #15202f);
-  --tile-bg-3: linear-gradient(160deg, #2c2416, #13202f);
-  --tile-text: #c9a45c;
+  --ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 22'%3E%3Cg fill='none' stroke='%23d4b06a' stroke-width='1'%3E%3Cpath d='M0 11h56M94 11h56'/%3E%3Cpath d='M75 2l9 9-9 9-9-9z'/%3E%3C/g%3E%3Ccircle cx='75' cy='11' r='2.5' fill='%23d4b06a'/%3E%3Ccircle cx='60' cy='11' r='1.5' fill='%23d4b06a'/%3E%3Ccircle cx='90' cy='11' r='1.5' fill='%23d4b06a'/%3E%3C/svg%3E");
+  --top-ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 44'%3E%3Cg fill='none' stroke='%23d4b06a' stroke-width='1.2'%3E%3Cpath d='M60 40 L18 14 M60 40 L34 6 M60 40 L60 2 M60 40 L86 6 M60 40 L102 14'/%3E%3Cpath d='M16 16 Q60 -14 104 16'/%3E%3C/g%3E%3Ccircle cx='60' cy='40' r='3.5' fill='%23d4b06a'/%3E%3C/svg%3E");
+  --top-ornament-h: 46px;
+  --particle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 0C11 7 13 9 20 10C13 11 11 13 10 20C9 13 7 11 0 10C7 9 9 7 10 0Z' fill='%23f0d79a'/%3E%3C/svg%3E");
 
-  --ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 170 26'%3E%3Cg fill='none' stroke='%23c9a45c' stroke-width='1'%3E%3Cpath d='M0 13h64M106 13h64'/%3E%3Cpath d='M85 3l10 10-10 10-10-10z'/%3E%3Cpath d='M64 13c4-6 8-6 11 0M106 13c-4-6-8-6-11 0'/%3E%3C/g%3E%3Ccircle cx='85' cy='13' r='2.5' fill='%23c9a45c'/%3E%3Ccircle cx='60' cy='13' r='1.5' fill='%23c9a45c'/%3E%3Ccircle cx='110' cy='13' r='1.5' fill='%23c9a45c'/%3E%3C/svg%3E");
+  --door-bg:
+    repeating-linear-gradient(45deg, rgba(212, 176, 106, .09) 0 1px, transparent 1px 16px),
+    repeating-linear-gradient(-45deg, rgba(212, 176, 106, .09) 0 1px, transparent 1px 16px),
+    radial-gradient(ellipse at 100% 50%, #1b2d48, #0b1524 75%);
+  --door-bg-r:
+    repeating-linear-gradient(45deg, rgba(212, 176, 106, .09) 0 1px, transparent 1px 16px),
+    repeating-linear-gradient(-45deg, rgba(212, 176, 106, .09) 0 1px, transparent 1px 16px),
+    radial-gradient(ellipse at 0% 50%, #1b2d48, #0b1524 75%);
 
-  --cover-bg:
-    radial-gradient(ellipse at 50% 0%, rgba(201, 164, 92, .18), transparent 60%),
-    radial-gradient(ellipse at 50% 100%, rgba(201, 164, 92, .12), transparent 55%),
-    #0f1b2d;
+  --hero-bg: radial-gradient(circle at 50% 30%, rgba(212, 176, 106, .2), transparent 60%);
+  --arch-bg: radial-gradient(circle at 50% 30%, #fdf6e7, #e9d4a8);
+  --arch-border: 2px solid #d4b06a;
+  --arch-dash: rgba(15, 27, 45, .25);
+  --arch-shadow: 0 0 60px rgba(212, 176, 106, .25);
+  --quote-bg: linear-gradient(135deg, rgba(212, 176, 106, .16), rgba(212, 176, 106, .04));
+  --gift-bg: linear-gradient(135deg, #c9a157, #7a5a24);
+
+  --tile-bg: linear-gradient(160deg, #1d3150, #0f1b2d);
+  --tile-bg-2: linear-gradient(160deg, #2b2a3a, #15202f);
+  --tile-bg-3: linear-gradient(160deg, #3a2f1c, #13202f);
+  --tile-text: #d4b06a;
 }
 
-/* Bingkai ganda emas pada sampul dan hero */
-.cover::before, .cover::after, .hero::before {
+.door::before {
   content: '';
   position: absolute;
-  pointer-events: none;
-  border: 1px solid var(--border);
+  inset: 20px 16px;
+  border: 1px solid rgba(212, 176, 106, .55);
+  border-radius: 140px 140px 6px 6px;
+  box-shadow: inset 0 0 0 6px rgba(11, 21, 36, .6), inset 0 0 0 7px rgba(212, 176, 106, .3);
 }
-.cover::before { inset: 18px; }
-.cover::after { inset: 26px; border-color: rgba(201, 164, 92, .18); }
-.hero::before { inset: 24px 18px; }
+.cover .guest-box { background: rgba(8, 17, 29, .55); }
+.cover-art { filter: drop-shadow(0 0 30px rgba(212, 176, 106, .35)); }
+.quote-card { border: 1px solid var(--border); }
+.btn-primary, .wish-avatar, .bottom-nav a.active, .chip input:checked + span, .badge-hadir, .music-btn { color: #0f1b2d; }
+.section:nth-of-type(even) { background: linear-gradient(180deg, #0f1b2d, #13213a 50%, #0f1b2d); }
 
-.cover-names, .hero-names, .closing-names { color: var(--title); }
-.cover-date, .hero-date { color: var(--title); }
-
-.section + .section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 1px;
-  height: 40px;
-  background: linear-gradient(var(--accent), transparent);
-}
-
-.card { background: linear-gradient(180deg, rgba(201, 164, 92, .08), rgba(201, 164, 92, .02)); }
-.btn { text-transform: uppercase; letter-spacing: .14em; font-size: .75rem; }
-.btn-sm { font-size: .7rem; }
-.rsvp-form option { background: #0f1b2d; }
+/* Huruf "&" pada Pinyon Script terlalu kecil: pakai versi italik dari font display */
+.amp, .couple-amp { font-family: var(--font-display); font-style: italic; }

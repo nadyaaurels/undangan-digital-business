@@ -1,0 +1,73 @@
+/* Tema: Pastel Dreamy — gradasi pink-lilac, awan & hati berjatuhan, gaya Gen Z yang playful */
+:root {
+  --page-bg: linear-gradient(160deg, #fbe3f0, #e6dcfb);
+  --bg: #fff7fb;
+  --surface: #ffffff;
+  --glass: rgba(255, 255, 255, .78);
+  --text: #4a3550;
+  --title: #9b4f86;
+  --muted: #8d7795;
+  --accent: #d6629b;
+  --accent-contrast: #ffffff;
+  --accent-glow: rgba(214, 98, 155, .3);
+  --btn-bg: linear-gradient(135deg, #f78fb3, #b388eb);
+  --chip-bg: rgba(214, 98, 155, .1);
+  --border: #f1d6e8;
+  --nav-bg: rgba(255, 255, 255, .85);
+  --frame-bg: linear-gradient(180deg, #fde7f3, #e9dcfb);
+  --card-shadow: 0 14px 34px rgba(155, 79, 134, .12);
+  --radius: 26px;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-script: 'Dancing Script', cursive;
+  --font-body: 'Quicksand', system-ui, sans-serif;
+
+  --hair: #5a3a2e;
+  --suit: #6c6fb5;
+  --suit-dark: #575aa0;
+  --tie: #f78fb3;
+  --gown: #ffffff;
+  --gown-shade: #f3d3e6;
+  --sash: #f7b8d2;
+  --bouquet-1: #f78fb3;
+  --bouquet-2: #d9c8ff;
+  --leaf: #8cc5a3;
+  --gold: #f2b84b;
+  --heart: #f06292;
+  --veil: rgba(255, 255, 255, .7);
+  --shadow: rgba(155, 79, 134, .14);
+
+  --ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 22'%3E%3Cpath d='M20 11h44M86 11h44' stroke='%23f1b6d3' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M75 18C68 13 65 10 65 7C65 4.5 67 3 69.5 3C72 3 73.5 4.5 75 6.5C76.5 4.5 78 3 80.5 3C83 3 85 4.5 85 7C85 10 82 13 75 18Z' fill='%23f78fb3'/%3E%3Ccircle cx='14' cy='11' r='2.5' fill='%23b388eb'/%3E%3Ccircle cx='136' cy='11' r='2.5' fill='%23b388eb'/%3E%3C/svg%3E");
+  --top-ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 50'%3E%3Cpath d='M70 4C71.5 14 74 16.5 84 18C74 19.5 71.5 22 70 32C68.5 22 66 19.5 56 18C66 16.5 68.5 14 70 4Z' fill='%23f2b84b'/%3E%3Cpath d='M38 22C39 28 40.5 29.5 46 30C40.5 31 39 32.5 38 38C37 32.5 35.5 31 30 30C35.5 29.5 37 28 38 22Z' fill='%23b388eb'/%3E%3Cpath d='M102 22C103 28 104.5 29.5 110 30C104.5 31 103 32.5 102 38C101 32.5 99.5 31 94 30C99.5 29.5 101 28 102 22Z' fill='%23f78fb3'/%3E%3Ccircle cx='20' cy='38' r='3' fill='%23f78fb3'/%3E%3Ccircle cx='120' cy='38' r='3' fill='%23b388eb'/%3E%3C/svg%3E");
+  --top-ornament-h: 50px;
+  --particle: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 18C3 13 1 9.5 1 6.5C1 3.5 3.3 2 5.8 2C7.8 2 9 3.2 10 4.8C11 3.2 12.2 2 14.2 2C16.7 2 19 3.5 19 6.5C19 9.5 17 13 10 18Z' fill='%23f78fb3' fill-opacity='.85'/%3E%3C/svg%3E");
+
+  --cloud: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 80'%3E%3Cg fill='%23ffffff' fill-opacity='.85'%3E%3Ccircle cx='50' cy='50' r='28'/%3E%3Ccircle cx='90' cy='38' r='34'/%3E%3Ccircle cx='132' cy='50' r='26'/%3E%3Crect x='40' y='50' width='110' height='30' rx='15'/%3E%3C/g%3E%3C/svg%3E");
+
+  --door-bg: var(--cloud) left -40px bottom 60px / 220px no-repeat, var(--cloud) right -80px top 90px / 160px no-repeat, linear-gradient(170deg, #fbd3e9, #e2d4ff);
+  --door-bg-r: var(--cloud) right -50px bottom 120px / 200px no-repeat, var(--cloud) left -70px top 40px / 170px no-repeat, linear-gradient(190deg, #fbd3e9, #e2d4ff);
+  --door-open-l: translateX(-100%);
+  --door-open-r: translateX(100%);
+
+  --hero-bg: var(--cloud) left -60px top 70px / 180px no-repeat, var(--cloud) right -70px top 260px / 170px no-repeat, linear-gradient(180deg, #fde4f1, #fff7fb 75%);
+  --arch-bg: linear-gradient(180deg, #fde7f3, #e9dcfb);
+  --arch-border: 5px solid #fff;
+  --arch-dash: rgba(214, 98, 155, .35);
+  --arch-shadow: 0 20px 44px rgba(179, 136, 235, .3);
+  --quote-bg: linear-gradient(135deg, #f78fb3, #b388eb);
+  --quote-text: #ffffff;
+  --quote-cite: #ffffff;
+  --gift-bg: linear-gradient(135deg, #f78fb3, #9f7ae0);
+
+  --tile-bg: linear-gradient(150deg, #fde4f1, #f7c6de);
+  --tile-bg-2: linear-gradient(150deg, #ece4ff, #d4c4fb);
+  --tile-bg-3: linear-gradient(150deg, #e2f4ec, #c6e8d6);
+  --tile-text: #9b4f86;
+}
+
+body { background-attachment: fixed; }
+.quote-mark { background: #fff; color: var(--accent); }
+.section:nth-of-type(even) { background: linear-gradient(180deg, #fff7fb, #f8efff 50%, #fff7fb); }
+.cd-box { border-radius: 20px; }
+.cd-num { background: var(--btn-bg); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.heading-title, .hero-names, .cover-names, .closing-names { font-weight: 700; }
