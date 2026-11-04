@@ -1,0 +1,68 @@
+/* Tema: Elegan Gold — biru malam dengan aksen emas, klasik & mewah */
+:root {
+  --page-bg: #08111d;
+  --bg: #0f1b2d;
+  --surface: rgba(201, 164, 92, .06);
+  --text: #f1e9d8;
+  --title: #e6cf9a;
+  --muted: #b5ab95;
+  --accent: #c9a45c;
+  --accent-contrast: #0f1b2d;
+  --border: rgba(201, 164, 92, .35);
+  --radius: 2px;
+  --btn-radius: 2px;
+  --input-radius: 2px;
+  --nav-bg: rgba(15, 27, 45, .85);
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-script: 'Great Vibes', cursive;
+  --font-body: 'Montserrat', system-ui, sans-serif;
+
+  --photo-radius: 999px 999px 4px 4px;
+  --photo-border: 1px solid #c9a45c;
+  --photo-padding: 6px;
+  --photo-bg: #13233a;
+  --photo-pattern: radial-gradient(circle at 50% 35%, rgba(201, 164, 92, .25), transparent 65%);
+  --photo-text: #e6cf9a;
+
+  --tile-bg: linear-gradient(160deg, #1a2c47, #0f1b2d);
+  --tile-bg-2: linear-gradient(160deg, #2a2a35, #15202f);
+  --tile-bg-3: linear-gradient(160deg, #2c2416, #13202f);
+  --tile-text: #c9a45c;
+
+  --ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 170 26'%3E%3Cg fill='none' stroke='%23c9a45c' stroke-width='1'%3E%3Cpath d='M0 13h64M106 13h64'/%3E%3Cpath d='M85 3l10 10-10 10-10-10z'/%3E%3Cpath d='M64 13c4-6 8-6 11 0M106 13c-4-6-8-6-11 0'/%3E%3C/g%3E%3Ccircle cx='85' cy='13' r='2.5' fill='%23c9a45c'/%3E%3Ccircle cx='60' cy='13' r='1.5' fill='%23c9a45c'/%3E%3Ccircle cx='110' cy='13' r='1.5' fill='%23c9a45c'/%3E%3C/svg%3E");
+
+  --cover-bg:
+    radial-gradient(ellipse at 50% 0%, rgba(201, 164, 92, .18), transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(201, 164, 92, .12), transparent 55%),
+    #0f1b2d;
+}
+
+/* Bingkai ganda emas pada sampul dan hero */
+.cover::before, .cover::after, .hero::before {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  border: 1px solid var(--border);
+}
+.cover::before { inset: 18px; }
+.cover::after { inset: 26px; border-color: rgba(201, 164, 92, .18); }
+.hero::before { inset: 24px 18px; }
+
+.cover-names, .hero-names, .closing-names { color: var(--title); }
+.cover-date, .hero-date { color: var(--title); }
+
+.section + .section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(var(--accent), transparent);
+}
+
+.card { background: linear-gradient(180deg, rgba(201, 164, 92, .08), rgba(201, 164, 92, .02)); }
+.btn { text-transform: uppercase; letter-spacing: .14em; font-size: .75rem; }
+.btn-sm { font-size: .7rem; }
+.rsvp-form option { background: #0f1b2d; }
